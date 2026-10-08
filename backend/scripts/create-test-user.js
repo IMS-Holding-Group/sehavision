@@ -5,7 +5,7 @@ const bcrypt = require('bcryptjs');
 const createTestUser = () => {
     return new Promise((resolve, reject) => {
         const email = 'email@gmail.com';
-        const password = 'password123';
+        const password = '';
         const name = 'Test User';
         
         // Check if user already exists

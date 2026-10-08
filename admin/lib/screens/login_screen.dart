@@ -202,7 +202,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                       child: Text(
-                        'البيانات الافتراضية:\nadmin@sehavision.com / admin123',
+                        'البيانات الافتراضية:\nadmin@sehavision.com / ',
                         style: AppTheme.bodySmall.copyWith(
                           color: AppTheme.primaryColor,
                         ),

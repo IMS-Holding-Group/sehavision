@@ -5,7 +5,7 @@ const bcrypt = require('bcryptjs');
 const checkAndCreateAdmin = () => {
   return new Promise((resolve, reject) => {
     const adminEmail = 'admin@sehavision.com';
-    const adminPassword = 'admin123';
+    const adminPassword = '';
     const adminName = 'مدير النظام';
 
     // Check if admin exists
@@ -87,7 +87,7 @@ if (require.main === module) {
       console.log('\n✅ Admin user is ready!');
       console.log('You can now login with:');
       console.log('Email: admin@sehavision.com');
-      console.log('Password: admin123\n');
+      console.log('Password: \n');
       process.exit(0);
     })
     .catch((error) => {

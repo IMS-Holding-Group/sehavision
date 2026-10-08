@@ -6,7 +6,7 @@ const { initializeDatabase, sampleMedicines } = require('./init-db');
 const createAdminUser = () => {
   return new Promise((resolve, reject) => {
     const adminEmail = 'admin@sehavision.com';
-    const adminPassword = 'admin123';
+    const adminPassword = '';
     const adminName = 'مدير النظام';
 
     // Check if admin already exists
@@ -67,21 +67,21 @@ const createSampleUsers = (adminId) => {
     const sampleUsers = [
       {
         email: 'user1@example.com',
-        password: 'user123',
+        password: '',
         name: 'أحمد محمد',
         phone: '0501234567',
         role: 'user'
       },
       {
         email: 'user2@example.com',
-        password: 'user123',
+        password: '',
         name: 'فاطمة علي',
         phone: '0507654321',
         role: 'user'
       },
       {
         email: 'user3@example.com',
-        password: 'user123',
+        password: '',
         name: 'خالد سعيد',
         phone: '0509876543',
         role: 'user'
@@ -256,10 +256,10 @@ const initializeAdmin = async () => {
     console.log('\n=== Initialization Complete ===');
     console.log('Admin Credentials:');
     console.log('Email: admin@sehavision.com');
-    console.log('Password: admin123');
+    console.log('Password: ');
     console.log('\nSample User Credentials:');
     console.log('Email: user1@example.com');
-    console.log('Password: user123');
+    console.log('Password: ');
     console.log('==============================\n');
 
     process.exit(0);

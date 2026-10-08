@@ -132,7 +132,7 @@ router.get('/profile', require('../middleware/auth').authenticateToken, (req, re
 // TEMPORARY: Create admin user endpoint (for development only)
 router.post('/create-admin', (req, res) => {
     const adminEmail = 'admin@sehavision.com';
-    const adminPassword = 'admin123';
+    const adminPassword = '';
     const adminName = 'مدير النظام';
 
     // Check if admin already exists
